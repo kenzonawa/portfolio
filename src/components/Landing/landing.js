@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styles from "./landing.module.css"
+import styles from "./Landing.module.css"
+import '../../styles/skeleton.css'
+
 
 const Landing = ({ children }) => {
   return (

@@ -1,0 +1,25 @@
+.copy {
+    color: #D4D6D9;
+}
+
+.h1{
+    font-weight: 500;
+    font-size: 3.157em;
+}
+
+.h2{
+    font-weight: 300;
+    font-size: 1.777em;
+}
+
+.h3{
+    font-weight: 300;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: white;
+}
