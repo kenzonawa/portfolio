@@ -1,6 +1,4 @@
-:root {
-  --PrimaryColor: #30336b;
-}
+@import "../../styles/base.css";
 
 .screen {
     width: 100%;
