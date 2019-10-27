@@ -11,16 +11,7 @@ import '../styles/skeleton.css'
 const config = { mass: 1, tension: 280, friction: 60 }
 
 const IndexPage = () => {
-  const props = useSpring({
-    from: { transform: 'scale(0.2)' },
-    to: async next => {
-      while (1) {
-        await next({ transform: 'scale(3.2)' })
-        await next({ transform: 'scale(0.2)' })
-        await next({ transform: 'scale(1.2)' })
-      }
-    },
-  })
+
   const animation = useSpring({config, transform: 'translate3d(0px,0,0)', opacity: 1, from: {opacity:0, transform: 'translate3d(-250px,0,0)'}})
   const animation2 = useSpring({config, delay: 750, transform: 'translate3d(0px,0,0)', opacity: 1, from: {opacity:0, transform: 'translate3d(-250px,0,0)'}})
   const animation3 = useSpring({config, delay: 2000, transform: 'translate3d(0px,0,0)', opacity: 1, from: {opacity:0, transform: 'translate3d(-250px,0,0)'}})
@@ -28,8 +19,8 @@ const IndexPage = () => {
   <Landing>
     <SEO title="Home" />
     <LandingNav />
-      <div class="row">  
-        <div class="eight columns">
+      <div className={["row", styles.flex].join(' ')}>  
+        <div className={["eight","columns", styles.left].join(' ')}>
           <animated.h1 className={[styles.copy, styles.h1].join(' ')} style={animation}>
             Kenzo Nawa
           </animated.h1>
@@ -40,10 +31,11 @@ const IndexPage = () => {
             I'm deeply passionate about consumer-facing mobile apps and artificial intelligence.        
           </animated.h3>
         </div>
-        <div class="four columns" style={{backgroundColor: 'red'}}> 
-          <div className={styles.circle}></div>
-          <animated.div className={[styles.circle, styles.h3].join(' ')} style={props}>
-          </animated.div>
+        <div className={["four","columns", styles.right].join(' ')}> 
+          <div className={styles.rightContainer}>
+            <div className={[styles.circle, styles.moving].join(' ')}></div>            
+            <div className={styles.circle}></div>
+          </div>
         </div>
       </div>
     <Link to="/page-2/">Go to page 2</Link>
