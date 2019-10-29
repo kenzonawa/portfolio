@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import {useSpring, animated} from 'react-spring'
 import styles from './index.module.css'
 import '../styles/skeleton.css'
+
 import Button from '../components/Button/Button'
 
 const config = { mass: 1, tension: 280, friction: 60 }
