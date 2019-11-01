@@ -1,0 +1,23 @@
+@import "../../styles/base.css";
+
+/* Smaller than phablet */
+@media (max-width: 550px) {
+    .row > div {
+    float:none;
+    }
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--Gray03);
+    margin: 1.5em auto;
+}
