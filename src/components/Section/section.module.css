@@ -1,8 +1,13 @@
+@import "../../styles/base.css";
 
+.icon {
+  width: 68px;
+  height: 68px;
+}
 
 .section{
-    background-color: #fafafa;
-    
+    padding-top: 7vh;
+    padding-bottom: 7vh;
 }
 
 .white {
@@ -11,4 +16,11 @@
 
 .gray {
     background-color: #fafafa;
+}
+
+.header {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: var(--Gray02);
 }

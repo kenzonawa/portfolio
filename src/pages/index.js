@@ -40,8 +40,8 @@ const IndexPage = () => {
         </div>
         <div className={["four","columns", styles.right].join(' ')}> 
           <animated.div className={styles.rightContainer} style={animation4} >
-            <div className={[styles.circle, styles.moving].join(' ')}></div>            
-            <div className={styles.circle}></div>
+            <Link to="/home/"><div className={[styles.circle, styles.moving].join(' ')}></div>            
+            <div className={styles.circle}></div></Link>
           </animated.div>
         </div>
       </div>

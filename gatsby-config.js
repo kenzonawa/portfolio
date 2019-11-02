@@ -1,11 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Kenzo Nawa Portfolio`,
+    description: `Kenzo Nawa is a product designer focused on consumer mobile apps. He lives at the intersection between design/code and applies design thinking on a variety of problems.`,
+    author: `@kenzonawa`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/,
+        },
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

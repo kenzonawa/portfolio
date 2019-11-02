@@ -8,18 +8,20 @@ import Project from '../components/Project/Project'
 const Home = () => (
   <Layout>
     <SEO title="Home" />
-    <Project 
-      image="https://i.imgur.com/iqnYzLw.png"
-      title="This is a project"
-      description="This is the description of this project."
-      link="/intuit/"
-      />
-    <Project 
-      image="https://i.imgur.com/iqnYzLw.png"
-      title="This is a project"
-      description="This is the description of this project."
-      link="/remember/"
-      />
+    <div className="container">
+      <Project 
+        image="https://i.imgur.com/iqnYzLw.png"
+        title="This is a project"
+        description="This is the description of this project."
+        link="/intuit/"
+        />
+      <Project 
+        image="https://i.imgur.com/iqnYzLw.png"
+        title="This is a project"
+        description="This is the description of this project."
+        link="/remember/"
+        />
+      </div>
   </Layout>
 )
 

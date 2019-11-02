@@ -5,7 +5,7 @@ import IconControl from '../IconControl/iconControl'
 const Footer = (props) => {
 
     return(
-        <>
+        <div className="container">
             <div className={styles.divider}></div>            
             <footer
             className={styles.footer}
@@ -44,7 +44,7 @@ const Footer = (props) => {
                 </div>
             </div>
             </footer>
-        </>
+        </div>
   )
 };
 
