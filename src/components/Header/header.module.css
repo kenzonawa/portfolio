@@ -2,7 +2,6 @@
 
 .header {
     background-color: var(--PrimaryColor);
-    margin-bottom: 1.35rem;
     height: 64px;
 }
 .headerContainer {

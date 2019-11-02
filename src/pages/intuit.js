@@ -4,11 +4,12 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import Section from "../components/Section/section"
 import SeoIcon from "../assets/seo.svg"
+import Hero from "../components/Hero/hero"
 
 const Intuit = () => (
   <Layout>
     <SEO title="Home" />
-    This is Intuit
+    <Hero title="Remember" description="Quick and easy reminders" />
     {/** Introduction */}
     <Section
       gray
@@ -202,6 +203,33 @@ const Intuit = () => (
         app. So, from their feedback, I changed the top bar color to gray to
         indicate inactiveness and added two actionable buttons.
       </p>
+    </Section>
+    {/** Shipping */}
+    <Section
+      white
+      icon={SeoIcon}
+      header="SHIPPING"
+      title="Launching On The App Store"
+    >
+      <p>
+        After refining my app with my beta testers' feedback, I decided to ship
+        my product. Publishing the app turned out to be much tougher than I
+        expected. I ran into many rejections along the way, but ultimately found
+        my way to the App Store!
+      </p>
+    </Section>
+    {/** The End */}
+    <Section gray icon={SeoIcon} header="The end" title="What I Learned">
+      <p>
+        This project gave me the opportunity to wear both the designer and the
+        developer hat. I certainly learned a lot from having to work both these
+        roles. For example, I had no idea that color codes on Sketch don't
+        translate directly into Swift colors. There were many times where I did
+        not understand why my app looked so different from the screens I had
+        designed in Sketch.
+      </p>
+      <h1>Check it out yourself!</h1>
+      [icon]
     </Section>
   </Layout>
 )

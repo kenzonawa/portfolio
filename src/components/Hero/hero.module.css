@@ -1,0 +1,43 @@
+@import '../../styles/base.css';
+
+.hero {
+  background: rgb(182,59,217);
+background: linear-gradient(135deg, #c91eeb, #1377eb);
+height: 100vh;
+}
+
+.background{
+  background: url(https://i.imgur.com/y2biMws.png) no-repeat center center; 
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.textContainer{
+  text-align: center;
+  color: white;
+}
+
+.title {
+  font-size: 3.25em;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 1.45em;
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+.title {
+  font-size: 4.25em;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 1.75em;
+}
+}
