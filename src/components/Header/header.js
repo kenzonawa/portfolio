@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
       <div></div>
       <div className={styles.links}>
         <Link to="/home/">Work</Link>
-        <a href="#about">About</a>
+        <Link to="/about/">About</Link>
         <a href={Pdf} target="_blank">
           Resume
         </a>
