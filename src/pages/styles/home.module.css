@@ -1,0 +1,17 @@
+@import "../../styles/base.css";
+
+.kenzo{
+  font-size: 5em;
+  font-family: 'Billabong';
+font-style: normal;
+font-weight: normal;
+}
+
+.designer{
+  font-size:1.75em;
+  
+}
+
+.intuit{
+  color: #1961E5;
+}

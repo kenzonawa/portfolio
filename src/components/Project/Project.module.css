@@ -7,6 +7,28 @@
     margin: 1.5em auto;
 }
 
+.project {
+  background-color: var(--Gray03);
+  border-radius: 28px;
+  padding: 2em;
+  margin: 4em auto;
+}
+
+.title{
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-top: 10px;;
+}
+
+.subtitle{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.description{
+  font-weight: 400;
+}
+
 .card {
 
 }

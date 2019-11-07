@@ -1,7 +1,7 @@
 @import "../../styles/base.css";
 
 .header {
-    background-color: var(--PrimaryColor);
+    background-color: white;
     height: 64px;
 }
 .headerContainer {
@@ -18,7 +18,7 @@
 
 /* Style the links inside the navigation bar */
 .links a {
-  color: white;
+  color: var(--Gray01);
   text-align: center;
   padding: 21px 16px;
   text-decoration: none;

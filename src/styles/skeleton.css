@@ -16,6 +16,15 @@
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
+.homeContainer{
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0 20px;
+  box-sizing: border-box; 
+}
 .section {
   position: relative;
   width: 100%;

@@ -7,17 +7,40 @@
     }
 }
 
+.row{
+  display: block;
+}
 
+.row > div {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.icon:first-child{
+  margin-left: 0;
+}
+
+.row > div > a {
+  margin: 0;
+}
+
+.footerBackground{
+  background-color: var(--Dark);
+  color: white;
+  padding: 3em 0;
+}
+
+.footer a {
+  color: var(--Gray04);
+}
 
 .footer {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .divider {
-    height: 1px;
+    height: 0;
     width: 100%;
-    background-color: var(--Gray03);
     margin: 1.5em auto;
 }
