@@ -35,7 +35,7 @@ const Home = () => {
             </h3>
             <p>
               I strive to push the world forward by creating a bridge between
-              people and technology.
+              people and technology. People and technology...
             </p>
             <Button primary>Get in touch</Button>
           </div>
