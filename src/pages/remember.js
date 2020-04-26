@@ -9,7 +9,7 @@ import Hero from "../components/Hero/hero"
 const Remember = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero title="Remember" description="Quick and easy reminders" />
+    <Hero remember title="Remember" description="Quick and easy reminders" />
     {/** Introduction */}
     <Section
       gray

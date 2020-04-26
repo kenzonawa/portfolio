@@ -14,7 +14,7 @@ const Intuit = () => (
     <Section
       gray
       icon={SeoIcon}
-      header="Introduction"
+      header="Summary"
       title="About this project"
     >
       <p>
@@ -32,7 +32,7 @@ const Intuit = () => (
       white
       icon={SeoIcon}
       header="Introduction"
-      title="My Personal Story"
+      title="TurboTax Design System"
     >
       <p>
       TurboTax is a big product. I was astonished when I came in and they said the product has over 40,000 screens. It's not easy to keep such a big product consistent.
@@ -50,7 +50,7 @@ const Intuit = () => (
       gray
       icon={SeoIcon}
       header="Problem"
-      title="Things when I came in"
+      title="All we have is text"
     >
       <p>
       When I came in, the design systems team was in a transition phase where all the documentation in Confluence was being brought over to a new website. We also had some documentation spread throughout Zeplin and PDF files.
@@ -88,7 +88,7 @@ const Intuit = () => (
       white
       icon={SeoIcon}
       header="The Reframe"
-      title="Narrowing The Problem"
+      title="We are not serving them well"
     >
       <p>
       What we had, essentially, was a design-only design system. We had components and patterns documented on the website, but some teams were unable to use them. 
@@ -105,7 +105,7 @@ const Intuit = () => (
     <Section
       gray
       icon={SeoIcon}
-      header="The Requirements"
+      header="Vision"
       title="Connecting design and dev"
     >
       <p>We had to make sure teams were getting what they needed, so we started working closer with our developers. There were two steps to this.</p>
@@ -127,7 +127,7 @@ const Intuit = () => (
     <Section
       white
       icon={SeoIcon}
-      header="Design"
+      header="Vision 2"
       title="Dispersed Documentation"
     >
       <p>
@@ -142,7 +142,7 @@ const Intuit = () => (
     <Section
       gray
       icon={SeoIcon}
-      header="Development & Iterating"
+      header="Outcome"
       title="Design Systems at work"
     >
       <p>

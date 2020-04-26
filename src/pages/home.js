@@ -8,17 +8,8 @@ import styles from "./styles/home.module.css"
 import Button from "../components/Button/Button"
 import lottie from "lottie-web"
 import Lottie from "react-lottie"
-import animation from "./animation.json"
 
 const Home = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animation,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  }
 
   return (
     <Layout>
@@ -27,19 +18,19 @@ const Home = () => {
         <div className="row vertical-align">
           <div className="seven columns">
             <div className={styles.hero}>
-            <div>
-            <h1 className={styles.kenzo}>
-              Hi, I'm Kenzo
+              <div>
+                <h1 className={styles.kenzo}>
+                  Hi, I'm Kenzo
             </h1>
-            <h3 className={styles.designer}>
-              Product Designer at <span className={styles.intuit}>Intuit.</span>
-            </h3>
-            <p>
-              I strive to push the world forward by creating a bridge between
-              people and technology. YEP
+                <h3 className={styles.designer}>
+                  Product Designer at <span className={styles.intuit}>Intuit.</span>
+                </h3>
+                <p>
+                  I strive to push the world forward by creating a bridge between
+                  people and technology. YEP
             </p>
+              </div>
             </div>
-          </div>
           </div>
           <div className="five columns">
             <img src="https://i.imgur.com/FicuBlx.png" />
@@ -53,9 +44,9 @@ const Home = () => {
           subtitle="How do you do something"
           link="/intuit/"
         >
-        <div className={styles.intuitds}>
-        <img src="https://i.imgur.com/0FDQO88.png" />
-        </div>
+          <div className={styles.intuitds}>
+            <img src="https://i.imgur.com/0FDQO88.png" />
+          </div>
         </Project>
         <div className={styles.divider}></div>
         <Project
@@ -65,7 +56,7 @@ const Home = () => {
         >
           <img className={styles.remember} src="https://i.imgur.com/DpW1RTY.png" />
         </Project>
-        
+
 
       </div>
     </Layout>
