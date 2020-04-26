@@ -36,7 +36,7 @@ const Home = () => {
             </h3>
             <p>
               I strive to push the world forward by creating a bridge between
-              people and technology. People and technology...
+              people and technology. YEP
             </p>
             </div>
           </div>
