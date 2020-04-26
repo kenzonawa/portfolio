@@ -5,7 +5,7 @@ var classnames = require('classnames');
 
 const Button = (props) => {
 
-    let classes = classnames(styles.button, { [styles.primary]: props.primary }, { [styles.ghost]: props.ghost });
+    let classes = classnames(styles.button, { [styles.primary]: props.primary }, { [styles.ghost]: props.ghost }, { [styles.outline]: props.outline });
 
     return(
         <>

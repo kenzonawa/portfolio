@@ -7,12 +7,19 @@ height: 100vh;
 }
 
 .background{
-  background: url(https://i.imgur.com/y2biMws.png) no-repeat center center; 
   background-size: cover;
   height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.intuitds{
+  background: url(https://i.imgur.com/KaZZysZ.png) no-repeat center center;
+}
+
+.remember{
+  background: url(https://i.imgur.com/y2biMws.png) no-repeat center center; 
 }
 
 .textContainer{

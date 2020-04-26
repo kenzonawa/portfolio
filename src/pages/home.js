@@ -24,11 +24,12 @@ const Home = () => {
     <Layout>
       <SEO title="Home" />
       <div className="homeContainer">
-        <div className="row">
+        <div className="row vertical-align">
           <div className="seven columns">
+            <div className={styles.hero}>
+            <div>
             <h1 className={styles.kenzo}>
-              Kenzo <br />
-              Nawa
+              Hi, I'm Kenzo
             </h1>
             <h3 className={styles.designer}>
               Product Designer at <span className={styles.intuit}>Intuit.</span>
@@ -37,27 +38,35 @@ const Home = () => {
               I strive to push the world forward by creating a bridge between
               people and technology. People and technology...
             </p>
-            <Button primary>Get in touch</Button>
+            </div>
+          </div>
           </div>
           <div className="five columns">
-            <Lottie options={defaultOptions} height={300} width={300} />
+            <img src="https://i.imgur.com/FicuBlx.png" />
           </div>
         </div>
         <br />
+        <h1 className={styles.featured}>FEATURED WORK</h1>
+        <div className={styles.featurehighlight}></div>
         <Project
-          image="https://i.imgur.com/iqnYzLw.png"
-          title="Intuit"
-          subtitle="Redefining design systems"
-          description="How do you help multiple teams on different tech stacks achieve a cohesive process for building out their products?"
+          title="Redefining design systems at Intuit"
+          subtitle="How do you do something"
           link="/intuit/"
-        />
+        >
+        <div className={styles.intuitds}>
+        <img src="https://i.imgur.com/0FDQO88.png" />
+        </div>
+        </Project>
+        <div className={styles.divider}></div>
         <Project
-          image="https://i.imgur.com/iqnYzLw.png"
-          title="Remember"
-          subtitle="Launching my own iOS app"
-          description="Building and launching my own product."
+          title="Launching my own iOS app"
+          subtitle="How do you build"
           link="/remember/"
-        />
+        >
+          <img className={styles.remember} src="https://i.imgur.com/DpW1RTY.png" />
+        </Project>
+        
+
       </div>
     </Layout>
   )

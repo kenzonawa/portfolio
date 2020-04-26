@@ -19,11 +19,15 @@
 .homeContainer{
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1160px;
   margin: 0 auto;
   margin-top: 40px;
   padding: 0 20px;
   box-sizing: border-box; 
+}
+.vertical-align{
+  display: flex;
+  align-items:center;
 }
 .section {
   position: relative;

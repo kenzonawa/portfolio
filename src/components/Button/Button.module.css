@@ -39,6 +39,16 @@ button {
     background-color: white;
 }
 
+.outline{
+  border: 2px solid var(--PrimaryColor);
+  color: var(--PrimaryColor);
+  background-color: white;
+}
+
+.outline:hover{
+  background-color: #F5F6F7;
+}
+
 @media all and (max-width:30em){
     .button{
         display: block;

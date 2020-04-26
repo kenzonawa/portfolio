@@ -16,16 +16,13 @@ const Project = props => {
         <div className="six columns">
           <h1 className={styles.title}>{props.title}</h1>
           <h2 className={styles.subtitle}>{props.subtitle}</h2>
-          <p className={styles.description}>{props.description}</p>
           <Link to={props.link}>
-            <Button primary>Case Study</Button>
+            <Button outline>Case Study  →</Button>
           </Link>
         </div>
         <div className="six columns">
           <Link to={props.link}>
-            <div className={styles.card}>
-              <img className={styles.image} src={props.image} alt="project" />
-            </div>
+            {props.children}
           </Link>
         </div>
       </div>

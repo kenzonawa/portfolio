@@ -1,10 +1,15 @@
 @import "../../styles/base.css";
 
+.hero{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .kenzo{
-  font-size: 5em;
-  font-family: 'Billabong';
-font-style: normal;
-font-weight: normal;
+font-size:2.75em;
+
 }
 
 .designer{
@@ -14,4 +19,33 @@ font-weight: normal;
 
 .intuit{
   color: #1961E5;
+}
+
+.intuitds {
+  border-radius: 4px;
+}
+
+.remember {
+  border-radius: 4px;
+}
+
+.featured{
+  margin: 2em auto 0em auto;
+  color: var(--PrimaryColor); 
+  font-weight: 800;
+  text-align: center;
+}
+
+.featurehighlight{
+    height: 4px;
+    width: 340px;
+    background-color: var(--Gray03);
+    margin: 12px auto 2em auto;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--Gray03);
+    margin: 6em auto 2em auto;
 }
