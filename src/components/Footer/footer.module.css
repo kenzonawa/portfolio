@@ -25,22 +25,36 @@
 }
 
 .footerBackground{
-  background-color: var(--Dark);
-  color: white;
+  color: var(--Dark);
   padding: 3em 0;
+  margin: 3em auto 6em auto;
 }
 
 .footer a {
-  color: var(--Gray04);
+  color: var(--PrimaryColor);
 }
 
 .footer {
     display: flex;
     flex-direction: column;
+    justify-content: left;
 }
 
 .divider {
-    height: 0;
-    width: 100%;
-    margin: 1.5em auto;
+top: 60px;
+    position: relative;
+    height: 6px;
+    display: block;
+    float: left;
+    width: calc((100% - 1180px)/2);
+    background-color: var(--Gray01);
+    margin: 0 0 1.45em 0;
+}
+
+@media (max-width: 1200px) {
+  .divider{
+    top: 0px;
+    width: 160px;
+  }
+
 }
