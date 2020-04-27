@@ -1,0 +1,26 @@
+@import "../../styles/base.css";
+
+.centeredImage{
+  max-height: 600px;
+  display: block;
+  margin: 0px auto 1.45rem auto ;
+}
+
+.centeredText{
+  text-align:center;
+}
+
+.centeredDiv{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.divider {
+    height: 2px;
+    display: block;
+    float: left;
+    width: 100%;
+    background-color: var(--Gray03);
+    margin: 0 0 2em 0;
+}

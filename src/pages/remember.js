@@ -3,8 +3,11 @@ import { Link } from "gatsby"
 import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import Section from "../components/Section/section"
+import Pfooter from "../components/Pfooter/pfooter"
 import SeoIcon from "../assets/seo.svg"
 import Hero from "../components/Hero/hero"
+import styles from "./styles/remember.module.css"
+
 
 const Remember = () => (
   <Layout>
@@ -121,7 +124,7 @@ const Remember = () => (
         time)? The negative consequences wouldn't need to be so high, for the
         investment to be worth it.
       </p>
-      <img src="https://i.imgur.com/1BqJoij.png" />
+      <img src="https://i.imgur.com/DBdKUC6.png" />
     </Section>
     {/** The Requirements */}
     <Section
@@ -136,7 +139,7 @@ const Remember = () => (
         be 1 screen and 1 modal. All the user would need to fill out was the
         task name and the time to be reminded.
       </p>
-      <img src="https://i.imgur.com/1BqJoij.png" />
+      <img src="https://i.imgur.com/Zsu5pHR.png" />
       <p>
         With a layout like this, the Call-To-Action on the home screen is the
         text input. Once that's filled in, you get a modal with the time picker
@@ -155,15 +158,15 @@ const Remember = () => (
         to style the UI elements. Here's the design of adding and deleting
         reminders:
       </p>
-      <img src="https://i.imgur.com/1BqJoij.png" />
-      <h2>Quick reminders</h2>
+      <img className={styles.centeredImage} src="https://i.imgur.com/mj2UsqF.gif" />
+      <h2 className={styles.centeredText}>Quick reminders</h2>
       <p>
         The empty state contains instructions on how to get started with the
         app. The flow of setting up a reminder is the same as the one
         illustrated in the low-fi design.
       </p>
-      <img src="https://i.imgur.com/1BqJoij.png" />
-      <h2>Easy deletion</h2>
+      <img className={styles.centeredImage} src="https://i.imgur.com/dBFgYG8.gif" />
+      <h2 className={styles.centeredText}>Easy deletion</h2>
       <p>
         While adding a reminder is easy, deleting should be just as easy. Just
         dragging the item to the right will casually remove the reminder from
@@ -194,8 +197,8 @@ const Remember = () => (
         and if they had any other feedback. Turns out there was one key part of
         this app that I had forgotten about.
       </p>
-      <img src="https://i.imgur.com/1BqJoij.png" />
-      <h2>Sent reminders</h2>
+      <img src="https://i.imgur.com/L3P3JCq.png" />
+      <h2 className={styles.centeredText}>Sent reminders</h2>
       <p>
         Most of them talked about how they wish they could act upon a reminder
         that was already sent. The way the app originally worked was that even
@@ -228,9 +231,13 @@ const Remember = () => (
         not understand why my app looked so different from the screens I had
         designed in Sketch.
       </p>
-      <h1>Check it out yourself!</h1>
-      [icon]
+      <div className={styles.centeredDiv}>
+        <h1>Check it out yourself!</h1>
+        <img height='60' src="https://i.imgur.com/zyephLu.png" />
+      </div>
     </Section>
+    <div className={styles.divider}></div>
+    <Pfooter previous="Redefining design systems at Intuit" previousLink="/intuit" />
   </Layout>
 )
 

@@ -8,6 +8,7 @@ import styles from "./styles/home.module.css"
 import Button from "../components/Button/Button"
 import lottie from "lottie-web"
 import Lottie from "react-lottie"
+import Footer from '../components/Footer/footer'
 
 const Home = () => {
 
@@ -59,6 +60,7 @@ const Home = () => {
 
 
       </div>
+      <Footer />
     </Layout>
   )
 }

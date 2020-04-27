@@ -1,0 +1,52 @@
+@import "../../styles/base.css";
+
+/* Smaller than phablet */
+@media (max-width: 550px) {
+    .row > div {
+    float:none;
+    }
+}
+
+.row{
+  display: block;
+}
+
+.row > div {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.icon:first-child{
+  margin-left: 0;
+}
+
+.row > div > a {
+  margin: 0;
+}
+
+.footerBackground{
+  margin: 3em auto;
+}
+
+.footer a {
+  color: var(--PrimaryColor);
+}
+
+.footer, footer .flexItem{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flexItem:first-of-type:after, .flexItem:last-of-type:before{
+  content:'';
+  display:inline-block;
+}
+
+.flexItem:last-of-type:before{
+
+}
+
+.flexItem{
+  flex: 2;
+}
