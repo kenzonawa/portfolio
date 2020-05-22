@@ -1,12 +1,31 @@
-@import '../../styles/base.css';
+@import "../../styles/base.css";
 
 .hero {
-  background: rgb(182,59,217);
-background: linear-gradient(135deg, #c91eeb, #1377eb);
-height: 100vh;
+  height: 100vh;
 }
 
-.background{
+.intuitdsHero {
+  background-color: #fafafa;
+}
+
+.intuitds {
+  background: url(https://i.imgur.com/elBVQZP.png) no-repeat center center;
+  background-size: cover;
+  color: --var(Gray01);
+
+  height: 100%;
+  display: block;
+  padding-top: 80px;
+}
+
+.rememberHero {
+  background: rgb(182, 59, 217);
+  background: linear-gradient(135deg, #c91eeb, #1377eb);
+}
+
+.remember {
+  background: url(https://i.imgur.com/y2biMws.png) no-repeat center center;
+  color: white;
   background-size: cover;
   height: 100%;
   display: flex;
@@ -14,17 +33,8 @@ height: 100vh;
   flex-direction: column;
 }
 
-.intuitds{
-  background: url(https://i.imgur.com/KaZZysZ.png) no-repeat center center;
-}
-
-.remember{
-  background: url(https://i.imgur.com/y2biMws.png) no-repeat center center; 
-}
-
-.textContainer{
+.textContainer {
   text-align: center;
-  color: white;
 }
 
 .title {
@@ -38,13 +48,12 @@ height: 100vh;
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+  .title {
+    font-size: 4.25em;
+  }
 
-.title {
-  font-size: 4.25em;
-}
-
-.description {
-  font-weight: 400;
-  font-size: 1.75em;
-}
+  .description {
+    font-weight: 400;
+    font-size: 1.75em;
+  }
 }

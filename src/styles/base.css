@@ -1,10 +1,20 @@
 :root {
-  --PrimaryColor: #047BD6;
-  --SecondaryColor: #567AB8;
-  --Dark: #2F3542;
+  --PrimaryColor: #047bd6;
+  --SecondaryColor: #567ab8;
+  --Dark: #2f3542;
   --Gray01: #393d3d;
-  --Gray02: #A7A7A8;
-  --Gray03: #E2E7ED;
+  --Gray02: #a7a7a8;
+  --Gray03: #e2e7ed;
   --Gray04: #9ea2a6;
   --Width: 1160px;
+}
+
+.full-width {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
 }

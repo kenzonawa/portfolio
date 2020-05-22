@@ -7,19 +7,23 @@ import Pfooter from "../components/Pfooter/pfooter"
 import SeoIcon from "../assets/seo.svg"
 import Hero from "../components/Hero/hero"
 import styles from "./styles/remember.module.css"
-
+import SectionContent from "../components/SectionContent/sectionContent"
 
 const Remember = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero remember title="Remember" description="Quick and easy reminders" />
+    <Hero
+      remember
+      title="Remember"
+      description="Designing and launching an iOS app"
+    />
     {/** Introduction */}
-    <Section
-      gray
-      icon={SeoIcon}
-      header="Introduction"
-      title="About this project"
-    >
+    <Section gray>
+      <SectionContent
+        icon={SeoIcon}
+        header="Introduction"
+        title="About this project"
+      ></SectionContent>
       <p>
         <strong>Summary:</strong> I created an iOS app that helps forgetful
         people remember to do tasks that are easily forgotten. This is the
@@ -34,12 +38,12 @@ const Remember = () => (
       </p>
     </Section>
     {/** The Problem */}
-    <Section
-      white
-      icon={SeoIcon}
-      header="The Problem"
-      title="My Personal Story"
-    >
+    <Section white>
+      <SectionContent
+        icon={SeoIcon}
+        header="The Problem"
+        title="My Personal Story"
+      ></SectionContent>
       <p>
         This happened a few years ago when I still lived in São Paulo, Brazil. I
         was alone at home playing a video game with my dog sitting next to me.
@@ -58,12 +62,12 @@ const Remember = () => (
       </p>
     </Section>
     {/** User Research */}
-    <Section
-      gray
-      icon={SeoIcon}
-      header="User Research"
-      title="Validating The Problem"
-    >
+    <Section gray>
+      <SectionContent
+        icon={SeoIcon}
+        header="User Research"
+        title="Validating The Problem"
+      ></SectionContent>
       <p>
         I talked to a few friends and asked them if they ever ran into the same
         problem. To my surprise, most of them could relate and said they forget
@@ -91,12 +95,12 @@ const Remember = () => (
       </p>
     </Section>
     {/** The Reframe */}
-    <Section
-      white
-      icon={SeoIcon}
-      header="The Reframe"
-      title="Narrowing The Problem"
-    >
+    <Section white>
+      <SectionContent
+        icon={SeoIcon}
+        header="The Reframe"
+        title="Narrowing The Problem"
+      ></SectionContent>
       <p>
         The reason these little tasks were forgotten was because they are so
         small that it’s not worth the effort of putting them up on Trello or
@@ -127,12 +131,12 @@ const Remember = () => (
       <img src="https://i.imgur.com/DBdKUC6.png" />
     </Section>
     {/** The Requirements */}
-    <Section
-      gray
-      icon={SeoIcon}
-      header="The Requirements"
-      title="Addressing The Needs"
-    >
+    <Section gray>
+      <SectionContent
+        icon={SeoIcon}
+        header="The Requirements"
+        title="Addressing The Needs"
+      ></SectionContent>
       <p>With this information, I had an idea of what the app needed to be.</p>
       <p>
         As opposed to the 2 screens and 1 modal from Apple, I wanted my app to
@@ -147,25 +151,31 @@ const Remember = () => (
       </p>
     </Section>
     {/** Design */}
-    <Section
-      white
-      icon={SeoIcon}
-      header="Design"
-      title="Pixels With Functionality"
-    >
+    <Section white>
+      <SectionContent
+        icon={SeoIcon}
+        header="Design"
+        title="Pixels With Functionality"
+      ></SectionContent>
       <p>
         With the main functionality and the flow defined, all that was left was
         to style the UI elements. Here's the design of adding and deleting
         reminders:
       </p>
-      <img className={styles.centeredImage} src="https://i.imgur.com/mj2UsqF.gif" />
+      <img
+        className={styles.centeredImage}
+        src="https://i.imgur.com/mj2UsqF.gif"
+      />
       <h2 className={styles.centeredText}>Quick reminders</h2>
       <p>
         The empty state contains instructions on how to get started with the
         app. The flow of setting up a reminder is the same as the one
         illustrated in the low-fi design.
       </p>
-      <img className={styles.centeredImage} src="https://i.imgur.com/dBFgYG8.gif" />
+      <img
+        className={styles.centeredImage}
+        src="https://i.imgur.com/dBFgYG8.gif"
+      />
       <h2 className={styles.centeredText}>Easy deletion</h2>
       <p>
         While adding a reminder is easy, deleting should be just as easy. Just
@@ -174,12 +184,12 @@ const Remember = () => (
       </p>
     </Section>
     {/** Development & Iterating */}
-    <Section
-      gray
-      icon={SeoIcon}
-      header="Development & Iterating"
-      title="User Testing With TestFlight"
-    >
+    <Section gray>
+      <SectionContent
+        icon={SeoIcon}
+        header="Development & Iterating"
+        title="User Testing With TestFlight"
+      ></SectionContent>
       <p>
         Coding this app was a long journey, but one that I will not cover in
         this case study. With the design on one hand and XCode on the other, I
@@ -208,12 +218,12 @@ const Remember = () => (
       </p>
     </Section>
     {/** Shipping */}
-    <Section
-      white
-      icon={SeoIcon}
-      header="SHIPPING"
-      title="Launching On The App Store"
-    >
+    <Section white>
+      <SectionContent
+        icon={SeoIcon}
+        header="SHIPPING"
+        title="Launching On The App Store"
+      ></SectionContent>
       <p>
         After refining my app with my beta testers' feedback, I decided to ship
         my product. Publishing the app turned out to be much tougher than I
@@ -222,7 +232,12 @@ const Remember = () => (
       </p>
     </Section>
     {/** The End */}
-    <Section gray icon={SeoIcon} header="The end" title="What I Learned">
+    <Section gray>
+      <SectionContent
+        icon={SeoIcon}
+        header="The end"
+        title="What I Learned"
+      ></SectionContent>
       <p>
         This project gave me the opportunity to wear both the designer and the
         developer hat. I certainly learned a lot from having to work both these
@@ -233,11 +248,14 @@ const Remember = () => (
       </p>
       <div className={styles.centeredDiv}>
         <h1>Check it out yourself!</h1>
-        <img height='60' src="https://i.imgur.com/zyephLu.png" />
+        <img height="60" src="https://i.imgur.com/zyephLu.png" />
       </div>
     </Section>
     <div className={styles.divider}></div>
-    <Pfooter previous="Redefining design systems at Intuit" previousLink="/intuit" />
+    <Pfooter
+      previous="Redefining design systems at Intuit"
+      previousLink="/intuit"
+    />
   </Layout>
 )
 
