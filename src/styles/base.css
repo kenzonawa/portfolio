@@ -17,4 +17,26 @@
   position: relative;
   right: 50%;
   width: 100vw;
+  object-fit: cover;
+}
+
+.big-width {
+  left: 25%;
+  margin-left: -25vw;
+  margin-right: -50vw;
+  max-width: 75vw;
+  position: relative;
+  right: 50%;
+  width: 75vw;
+  object-fit: cover;
+}
+
+.full-width-stretch {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  max-width: 100vw;
+  position: relative;
+  right: 50%;
+  width: 100vw;
 }

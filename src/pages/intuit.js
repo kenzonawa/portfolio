@@ -7,6 +7,7 @@ import SeoIcon from "../assets/seo.svg"
 import Hero from "../components/Hero/hero"
 import Number from "../components/Number/number"
 import SectionContent from "../components/SectionContent/sectionContent"
+import styles from "./styles/intuit.module.css"
 
 const Intuit = () => (
   <Layout>
@@ -36,7 +37,7 @@ const Intuit = () => (
     {/** The Problem */}
     <Section white>
       <Number>01</Number>
-      <h1>Trying to control the chaos</h1>
+      <h1>Trying to contain the chaos</h1>
 
       <p>
         TurboTax is a big product. I was astonished when I came in and they said
@@ -49,6 +50,11 @@ const Intuit = () => (
         in Confluence where they described design intent of some recurrent UX
         patterns in TurboTax.
       </p>
+      <img
+        className="full-width"
+        height="400px"
+        src="https://i.imgur.com/h3Reh7C.jpg"
+      />
       <p>
         The initial goal of the design system team was to increase the speed at
         which design decisions were made. By having documentation around
@@ -59,7 +65,7 @@ const Intuit = () => (
     {/** User Research */}
     <Section gray>
       <Number>02</Number>
-      <h1>But all we have is text</h1>
+      <h1>But all we have is scattered text</h1>
 
       <p>
         When I came in, the design systems team was in a transition phase where
@@ -73,8 +79,29 @@ const Intuit = () => (
         with the designers in the product teams but the developers as well. We
         uncovered some interesting insights.
       </p>
-      <img className="full-width" src="https://i.imgur.com/GkcGclw.png" />
+
+      <h3>Disconnect between design and development</h3>
+      <img className="big-width" src="https://i.imgur.com/ezDNqP4.jpg" />
+
+      <p>
+        When shipping features with their engineers, sometimes designers would
+        send them component documentation. What that meant was that the
+        developers believed they had to build it from scratch, which resulted in
+        teams coding duplicates of the same component. There wasn't a clear
+        process for product teams when trying to leverage the design system.
+      </p>
+      {/*
+        <img src="https://i.imgur.com/Nfun9ST.png" />
+      */}
+      <p>
+        There were also cases where designers would try to use components, but
+        their developers ran into technical constraints. Which meant that the
+        product team would lose the built-in treatment for responsiveness,
+        accessibility and interaction behavior - often having to recreate it all
+        from scratch.
+      </p>
       <h3>Dispersed documentation</h3>
+      <img className="big-width" src="https://i.imgur.com/hO3vddI.jpg" />
       <p>
         Designers would consult the website and hunt around for old sketch files
         that had what they needed. They often skimmed through the documentation
@@ -98,22 +125,6 @@ const Intuit = () => (
         We had an outdated Sketch library. No one had taken ownership of the
         symbol library, so designers usually just asked around for Sketch files
         that had what they needed.
-      </p>
-      <h3>Disconnect between design and development</h3>
-      <p>
-        When shipping features with their engineers, sometimes designers would
-        send them component documentation. What that meant was that the
-        developers believed they had to build it from scratch, which resulted in
-        teams coding duplicates of the same component. There wasn't a clear
-        process for product teams when trying to leverage the design system.
-      </p>
-      <img src="https://i.imgur.com/Nfun9ST.png" />
-      <p>
-        There were also cases where designers would try to use components, but
-        their developers ran into technical constraints. Which meant that the
-        product team would lose the built-in treatment for responsiveness,
-        accessibility and interaction behavior - often having to recreate it all
-        from scratch.
       </p>
     </Section>
     {/** The Reframe */}
@@ -150,6 +161,7 @@ const Intuit = () => (
         working closer with our developers. There were two steps to this.
       </p>
       <h4>1. Process</h4>
+      <img className="big-width" src="https://i.imgur.com/mrScSQR.jpg" />
       <p>
         Creating closer relationships between designers and developers. We made
         it a priority to clearly understand what the engineering gaps were. This
@@ -157,13 +169,18 @@ const Intuit = () => (
         could have a conversation about how to solve a particular issue.
       </p>
       <h4>2. Storybook</h4>
+      <video autoPlay muted loop playsInline className={styles.video}>
+        <source
+          src="https://storybook.js.org/videos/storybook-hero-video-optimized.mp4"
+          type="video/mp4"
+        ></source>
+      </video>
       <p>
         Using Storybook to display all our components running off code. The goal
         here was that Storybook would become the main source of truth when
         consulting the design system. Here, everyone could see what the
         component actually looked like and play with its interaction behaviors.
       </p>
-      <img src="https://i.imgur.com/1BqJoij.png" />
       <p>
         Knowing that having alignment between designers and developers was a
         priority, it was the only tool that fulfilled this need. It could not
@@ -186,7 +203,6 @@ const Intuit = () => (
         everywhere and outdated information still available. We needed to
         consolidate.
       </p>
-      <img src="https://i.imgur.com/1BqJoij.png" />
     </Section>
     {/** Development & Iterating */}
     <Section
