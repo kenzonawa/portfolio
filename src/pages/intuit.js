@@ -22,21 +22,24 @@ const Intuit = () => (
       <SectionContent
         icon={SeoIcon}
         header="Summary"
-        title="About this project"
+        title="Redefining design systems in TurboTax"
       ></SectionContent>
       <p>
-        <strong>Summary:</strong> BLANK
+        <strong>Summary:</strong> How do you change the game of a nascent design
+        system in favor of product speed and cohesivenss?
       </p>
       <p>
         <strong>Duration:</strong> 1.5 years
       </p>
       <p>
-        <strong>My Role:</strong> BLANK
+        <strong>My Role:</strong> For the most part, my principal designer led
+        the vision of our work and I took care of getting things done.
       </p>
     </Section>
     {/** The Problem */}
     <Section white>
       <Number>01</Number>
+      <h3 className={styles.subheader}>PROBLEM</h3>
       <h1>Trying to contain the chaos</h1>
 
       <p>
@@ -65,6 +68,7 @@ const Intuit = () => (
     {/** User Research */}
     <Section gray>
       <Number>02</Number>
+      <h3 className={styles.subheader}>RESEARCH</h3>
       <h1>But all we have is scattered text</h1>
 
       <p>
@@ -77,7 +81,7 @@ const Intuit = () => (
         My principal designer and I were newer to the team, so we partnered to
         understand the landscape a little better. We started talking not only
         with the designers in the product teams but the developers as well. We
-        uncovered some interesting insights.
+        uncovered some interesting insights:
       </p>
 
       <h3>Disconnect between design and development</h3>
@@ -135,6 +139,7 @@ const Intuit = () => (
       title="We are not serving them well"
     >
       <Number>03</Number>
+      <h3 className={styles.subheader}>EVALUATION</h3>
       <h1>The word to component gap</h1>
       <p>
         What we had, essentially, was a design-only design system. We had
@@ -142,6 +147,7 @@ const Intuit = () => (
         unable to use them.  At this point, there was not a lot of trust in the
         design system.
       </p>
+      [this also meant teams could experiment less]
       <img src="https://i.imgur.com/bTVjRLH.png" />
       <h3>Revisiting the initial goal</h3>
       <p>
@@ -155,6 +161,7 @@ const Intuit = () => (
     {/** The Requirements */}
     <Section gray>
       <Number>04</Number>
+      <h3 className={styles.subheader}>ACTION</h3>
       <h1>Reworking the process and infrastructure</h1>
       <p>
         We had to make sure teams were getting what they needed, so we started
@@ -192,6 +199,7 @@ const Intuit = () => (
     {/** Design */}
     <Section white>
       <Number>05</Number>
+      <h3 className={styles.subheader}>REFINE</h3>
       <h1>Closing all the gaps</h1>
       <p>
         We still had dispersed documentation and now we added one more resource.
