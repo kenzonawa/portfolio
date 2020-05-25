@@ -5,7 +5,7 @@ html {
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  font-size: 16px;
+  font-size: 18px;
 }
 body {
   margin: 0;
@@ -365,6 +365,8 @@ dd {
   margin-bottom: 1.45rem;
 }
 p {
+  //font-family: "Zilla Slab", serif;
+  font-weight: 400;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -373,8 +375,8 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.75rem;
-  font-size: 1.125em;
-  line-height: 1.85em;
+  font-size: 1em;
+  line-height: 1.75em;
 }
 figure {
   margin-left: 0;
