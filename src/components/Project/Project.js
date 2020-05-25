@@ -12,20 +12,17 @@ const Project = props => {
 
   return (
     <>
-      <div className={classes}>
-        <div className="six columns">
-          <h1 className={styles.title}>{props.title}</h1>
-          <h2 className={styles.subtitle}>{props.subtitle}</h2>
-          <Link to={props.link}>
-            <Button outline>Case Study  →</Button>
-          </Link>
+      <Link to={props.link}>
+        <div className={styles.card}>
+          <div className={classes}>
+            <div className="six columns">{props.children}</div>
+            <div className="six columns">
+              <h1 className={styles.title}>{props.title}</h1>
+              <h2 className={styles.subtitle}>{props.subtitle}</h2>
+            </div>
+          </div>
         </div>
-        <div className="six columns">
-          <Link to={props.link}>
-            {props.children}
-          </Link>
-        </div>
-      </div>
+      </Link>
     </>
   )
 }

@@ -1,0 +1,23 @@
+@import "../../styles/base.css";
+
+.section {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+
+.white {
+  background-color: white;
+}
+
+.gray {
+  background-color: #fafafa;
+}
+
+.black {
+  background-color: #000;
+  color: white;
+}
+
+.reel {
+  background-color: var(--Gray01);
+}

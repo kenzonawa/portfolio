@@ -2,12 +2,12 @@
 
 /* Smaller than phablet */
 @media (max-width: 550px) {
-    .row > div {
-    float:none;
-    }
+  .row > div {
+    float: none;
+  }
 }
 
-.row{
+.row {
   display: block;
 }
 
@@ -16,7 +16,7 @@
   margin-left: 20px;
 }
 
-.icon:first-child{
+.icon:first-child {
   margin-left: 0;
 }
 
@@ -24,10 +24,10 @@
   margin: 0;
 }
 
-.footerBackground{
-  color: var(--Dark);
+.footerBackground {
+  background-color: white;
+  color: var(--Gray01);
   padding: 3em 0;
-  margin: 3em auto 6em auto;
 }
 
 .footer a {
@@ -35,26 +35,26 @@
 }
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .divider {
-top: 60px;
-    position: relative;
-    height: 6px;
-    display: block;
-    float: left;
-    width: calc((100% - 1180px)/2);
-    background-color: var(--Gray01);
-    margin: 0 0 1.45em 0;
+  top: 60px;
+  position: relative;
+  height: 6px;
+  display: block;
+  float: left;
+  width: calc((100% - 1180px) / 2);
+  background-color: var(--Gray01);
+  margin: 0 0 1.45em 0;
 }
 
 @media (max-width: 1200px) {
-  .divider{
+  .divider {
     top: 0px;
     width: 160px;
   }
-
 }

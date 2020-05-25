@@ -1,24 +1,33 @@
 @import "../../styles/base.css";
 
-.hero{
+.hero {
+  height: 75vh;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
-.kenzo{
-font-size:2.75em;
-
+.kenzo {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  font-size: 2.75em;
 }
 
-.designer{
-  font-size:1.75em;
-  
+.designer {
+  font-size: 1.75em;
+  margin-bottom: 2em;
 }
 
-.intuit{
-  color: #1961E5;
+.video {
+  position: absolute;
+  width: 100%;
+  height: 110%;
+  opacity: 50%;
+}
+
+.intuit {
+  color: #1961e5;
 }
 
 .intuitds {
@@ -26,26 +35,25 @@ font-size:2.75em;
 }
 
 .remember {
-  border-radius: 4px;
 }
 
-.featured{
+.featured {
   margin: 2em auto 0em auto;
-  color: var(--PrimaryColor); 
+  color: var(--PrimaryColor);
   font-weight: 800;
   text-align: center;
 }
 
-.featurehighlight{
-    height: 4px;
-    width: 340px;
-    background-color: var(--Gray03);
-    margin: 12px auto 2em auto;
+.featurehighlight {
+  height: 4px;
+  width: 340px;
+  background-color: var(--Gray03);
+  margin: 12px auto 2em auto;
 }
 
 .divider {
-    height: 1px;
-    width: 100%;
-    background-color: var(--Gray03);
-    margin: 6em auto 2em auto;
+  height: 1px;
+  width: 100%;
+  background-color: var(--Gray03);
+  margin: 6em auto 2em auto;
 }

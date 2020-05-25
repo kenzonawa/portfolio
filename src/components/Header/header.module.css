@@ -1,13 +1,22 @@
 @import "../../styles/base.css";
 
 .header {
-    background-color: white;
-    height: 64px;
+  background-color: white;
+  height: 64px;
 }
+
+.black {
+  background-color: black;
+}
+
+.black .links a {
+  color: var(--Gray03);
+}
+
 .headerContainer {
-    margin: 0 auto;
-    max-width: var(--Width);
-    padding: 0 1.0875rem;
+  margin: 0 auto;
+  max-width: var(--Width);
+  padding: 0 1.0875rem;
 }
 
 .links {
