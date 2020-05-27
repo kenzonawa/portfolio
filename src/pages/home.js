@@ -12,6 +12,8 @@ import lottie from "lottie-web"
 import Lottie from "react-lottie"
 import Footer from "../components/Footer/footer"
 import IntuitVideo from "../videos/intuit.mp4"
+import { Router } from "@reach/router"
+import Login from "../components/Login"
 
 const Home = () => {
   return (
@@ -41,7 +43,7 @@ const Home = () => {
         <Project
           title="Design systems at Intuit"
           subtitle="Description"
-          link="/intuit/"
+          link="app/intuit"
         >
           <div className={styles.intuitds}>
             <img src="https://i.imgur.com/0FDQO88.png" />
