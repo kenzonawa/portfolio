@@ -13,7 +13,8 @@ import Lottie from "react-lottie"
 import Footer from "../components/Footer/footer"
 import IntuitVideo from "../videos/intuit.mp4"
 import { Router } from "@reach/router"
-import Login from "../components/Login"
+import Login from "../components/Login/Login"
+import Intuit from "../components/Cases/Intuit"
 
 const Home = () => {
   return (

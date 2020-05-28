@@ -6,9 +6,9 @@ const Footer = props => {
   return (
     <div className={styles.footerBackground}>
       <footer className={styles.footer}>
-        <p>
+        <h4 className={styles.contact}>
           Hit me up at <a href="#">kenzo.nawa@gmail.com</a>
-        </p>
+        </h4>
         <div className={styles.row}>
           <div className={styles.icon}>
             <IconControl

@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^4.10.0",
     "aos": "^2.3.4",
     "classnames": "^2.2.6",
     "gatsby": "^2.22.11",
@@ -22,6 +23,8 @@
     "react-helmet": "^5.2.1",
     "react-lottie": "^1.2.3",
     "react-spring": "^8.0.27",
+    "typeface-krub": "0.0.61",
+    "typeface-lora": "0.0.72",
     "typeface-zilla-slab": "0.0.72"
   },
   "devDependencies": {

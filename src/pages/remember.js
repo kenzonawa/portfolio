@@ -6,7 +6,7 @@ import Section from "../components/Section/section"
 import Pfooter from "../components/Pfooter/pfooter"
 import SeoIcon from "../assets/seo.svg"
 import Hero from "../components/Hero/hero"
-import styles from "./styles/project.module.css"
+import styles from "../components/Cases/project.module.css"
 import SectionContent from "../components/SectionContent/sectionContent"
 
 const Remember = () => (

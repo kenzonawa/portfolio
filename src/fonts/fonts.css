@@ -1,4 +1,16 @@
 @font-face {
+  font-family: Jost;
+  font-style: normal;
+  src: url("Jost-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: Jost;
+  font-style: italic;
+  src: url("Jost-Italic-VariableFont_wght.ttf");
+}
+
+@font-face {
   font-family: HKGrotesk;
   font-weight: 300;
   font-style: normal;

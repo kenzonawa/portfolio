@@ -1,6 +1,9 @@
 @import "../../styles/base.css";
 
-
 .kenzo {
-  padding: 2em;
+  padding: 2em 1em;
+}
+
+.about {
+  margin-top: 0;
 }

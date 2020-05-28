@@ -5,6 +5,8 @@ import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
 import Project from "../components/Project/Project"
 import styles from "./styles/about.module.css"
+import Footer from "../components/Footer/footer"
+import HomeSection from "../components/HomeSection/homeSection"
 
 var classnames = require("classnames")
 
@@ -14,30 +16,34 @@ const Home = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="container">
-        <div className="row">
-          <div className={classes}>
-            <img src="http://kenzonawa.com/images/bandwhitef2f2.png" />
-          </div>
-          <div className={classes}>
-            <h1>Kenzo Nawa</h1>
-            <p>
-              I'm currently working on design systems at Intuit. My technical
-              background allows me to execute on scalability issues so products
-              can ship more efficiently.
-            </p>
-            <p>
-              Most people see me and think: "Oh, that guy is Japanese (or
-              Chinese)" and that's where I like to come in with my easter egg.
-              "That guy" is actually from Brazil.
-            </p>
-            <p>
-              In short, I'm of Japanese heritage, born and raised in Brazil,
-              living the American dream.
-            </p>
+      <HomeSection>
+        <div className={styles.about}>
+          <div className="row">
+            <div className={classes}>
+              <img src="https://i.imgur.com/qeO4Dqc.jpg" />
+            </div>
+            <div className={classes}>
+              <h2>Kenzo is a straight edge designer</h2>
+              <p>
+                Currently helping TurboTax customers connect to tax experts at
+                Intuit. My technical background allows me to execute on
+                scalability issues so products can ship more efficiently.
+              </p>
+              <h4>Interests:</h4>
+              <p>
+                Video games
+                <br />
+                Soccer
+                <br />
+                Electric guitar
+                <br />
+                Drift into thought
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </HomeSection>
+      <Footer />
     </Layout>
   )
 }
