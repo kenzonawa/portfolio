@@ -26,18 +26,21 @@ const Home = () => {
               <h2>Kenzo is a straight edge designer</h2>
               <p>
                 Currently helping TurboTax customers connect to tax experts at
-                Intuit. My technical background allows me to execute on
-                scalability issues so products can ship more efficiently.
+                Intuit.
+              </p>
+              <p>
+                My technical background allows me to execute on scalability
+                issues so products can ship more efficiently.
               </p>
               <h4>Interests:</h4>
               <p>
-                Video games
+                🎮 Video games
                 <br />
-                Soccer
+                ⚽ Soccer
                 <br />
-                Electric guitar
+                🎸 Electric guitar
                 <br />
-                Drift into thought
+                💭 Drift into thought
               </p>
             </div>
           </div>

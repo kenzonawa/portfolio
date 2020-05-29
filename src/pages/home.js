@@ -41,26 +41,30 @@ const Home = () => {
       </Section>
 
       <HomeSection reel>
-        <Project
-          title="Design systems at Intuit"
-          subtitle="Description"
-          link="app/intuit"
-        >
-          <div className={styles.intuitds}>
-            <img src="https://i.imgur.com/0FDQO88.png" />
-          </div>
-        </Project>
-
-        <Project
-          title="Launching my own iOS app"
-          subtitle="How do you build"
-          link="/remember/"
-        >
-          <img
-            className={styles.remember}
-            src="https://i.imgur.com/DpW1RTY.png"
-          />
-        </Project>
+        <div className={styles.flexGrid}>
+          <Project
+            title="What happens when a 4,000+ screen app tries to use a design system"
+            subtitle="Description"
+            time="7 min read"
+            link="app/intuit"
+          >
+            <img
+              className={styles.noBottom}
+              src="https://i.imgur.com/0FDQO88.png"
+            />
+          </Project>
+          <Project
+            title="Behind the scenes of a designer who launched an iOS app"
+            subtitle="This is more process than you find for your regular app"
+            time="6 min read"
+            link="/remember/"
+          >
+            <img
+              className={styles.noBottom}
+              src="https://i.imgur.com/DpW1RTY.png"
+            />
+          </Project>
+        </div>
       </HomeSection>
       <Footer />
     </Layout>

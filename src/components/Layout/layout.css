@@ -57,6 +57,7 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -64,8 +65,7 @@ a:hover {
 }
 abbr[title] {
   border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
+  text-decoration: none;
 }
 b,
 strong {

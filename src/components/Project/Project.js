@@ -5,25 +5,22 @@ import "../../styles/skeleton.css"
 import Button from "../Button/Button"
 import { Link } from "gatsby"
 
-var classnames = require("classnames")
-
 const Project = props => {
-  let classes = classnames(styles.project, "row")
-
   return (
-    <>
+    <div className={styles.linker}>
       <Link to={props.link}>
         <div className={styles.card}>
-          <div className={classes}>
-            <div className="six columns">{props.children}</div>
-            <div className="six columns">
+          <div className={styles.project}>
+            {props.children}
+            <div className={styles.text}>
               <h1 className={styles.title}>{props.title}</h1>
-              <h2 className={styles.subtitle}>{props.subtitle}</h2>
+              <p className={styles.subtitle}>{props.subtitle}</p>
+              <p className={styles.time}>{props.time}</p>
             </div>
           </div>
         </div>
       </Link>
-    </>
+    </div>
   )
 }
 

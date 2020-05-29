@@ -30,11 +30,16 @@
   color: #1961e5;
 }
 
-.intuitds {
-  border-radius: 4px;
+.noBottom {
+  margin: 0;
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-bottom: 1px solid #fafafa;
 }
 
-.remember {
+.intuitds {
+  border-radius: 4px;
 }
 
 .featured {
@@ -56,4 +61,16 @@
   width: 100%;
   background-color: var(--Gray03);
   margin: 6em auto 2em auto;
+}
+
+.flexGrid {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+@media (max-width: 1000px) {
+  .flexGrid {
+    display: block;
+  }
 }
