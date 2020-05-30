@@ -44,9 +44,10 @@ const Home = () => {
         <div className={styles.flexGrid}>
           <Project
             title="What happens when a 4,000+ screen app tries to use a design system"
-            subtitle="Description"
+            subtitle="There's a lot of people involved"
             time="7 min read"
             link="app/intuit"
+            locked
           >
             <img
               className={styles.noBottom}

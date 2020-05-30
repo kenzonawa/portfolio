@@ -4,6 +4,7 @@ import PropTypes from "prop-types"
 import "../../styles/skeleton.css"
 import Button from "../Button/Button"
 import { Link } from "gatsby"
+import LockIcon from "../../assets/lock.svg"
 
 const Project = props => {
   return (
@@ -13,7 +14,11 @@ const Project = props => {
           <div className={styles.project}>
             {props.children}
             <div className={styles.text}>
-              <h1 className={styles.title}>{props.title}</h1>
+              <div className={styles.header}>
+                {props.locked ? <LockIcon className={styles.lock} /> : ""}
+
+                <h1 className={styles.title}>{props.title}</h1>
+              </div>
               <p className={styles.subtitle}>{props.subtitle}</p>
               <p className={styles.time}>{props.time}</p>
             </div>

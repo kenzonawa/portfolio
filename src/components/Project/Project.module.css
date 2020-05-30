@@ -37,6 +37,20 @@
   letter-spacing: -0.5px;
   margin-bottom: 0.5em;
 }
+.lock {
+  height: 24px;
+  width: 24px;
+  float: left;
+  margin-left: 0;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+.lock path {
+  fill: var(--Gray04);
+}
+
+.header {
+}
 
 .subtitle {
   font-size: 1em;

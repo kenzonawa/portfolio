@@ -20,12 +20,12 @@ const Remember = () => (
     {/** Introduction */}
     <Section black>
       <div className={styles.spacious}>
-        <h3 className={styles.about}>ABOUT THIS PROJECT</h3>
+        <h4 className={styles.about}>ABOUT THIS PROJECT</h4>
         <div className={styles.paragraph}>
-          <p className={styles.summary}>
+          <h3 className={styles.summary}>
             I created an iOS app that helps people remember easy-to-forget
             tasks.
-          </p>
+          </h3>
         </div>
       </div>
     </Section>
@@ -264,7 +264,7 @@ const Remember = () => (
     <div className={styles.divider}></div>
     <Pfooter
       previous="Redefining design systems at Intuit"
-      previousLink="/intuit"
+      previousLink="/app/intuit"
     />
   </Layout>
 )

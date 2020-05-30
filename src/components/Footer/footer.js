@@ -6,14 +6,27 @@ const Footer = props => {
   return (
     <div className={styles.footerBackground}>
       <footer className={styles.footer}>
-        <h4 className={styles.contact}>
+        <h3 className={styles.contact}>Let's talk 💬</h3>
+        <p className={styles.description}>
           Hit me up at <a href="#">kenzo.nawa@gmail.com</a>
-        </h4>
+        </p>
         <div className={styles.row}>
-          <div className={styles.icon}>
+          <a href="https://www.linkedin.com/in/kenzonawa/" target="_blank">
+            <h3 className={styles.link}>LINKEDIN</h3>
+          </a>
+          <span>&nbsp; / &nbsp;</span>
+          <a href="https://medium.com/@kenzonawa" target="_blank">
+            <h3 className={styles.link}>MEDIUM</h3>
+          </a>
+          <span>&nbsp; / &nbsp;</span>
+          <a href="https://twitter.com/kenzo_nawa" target="_blank">
+            <h3 className={styles.link}>TWITTER</h3>
+          </a>
+
+          {/* 
             <IconControl
               link="https://www.linkedin.com/in/kenzonawa/"
-              label="LinkedIn"
+              label="LINKEDIN"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +70,7 @@ const Footer = props => {
                 />
               </svg>
             </IconControl>
-          </div>
+            **/}
         </div>
       </footer>
     </div>

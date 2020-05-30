@@ -1,37 +1,32 @@
 @import "../../styles/base.css";
 
-/* Smaller than phablet */
-@media (max-width: 550px) {
-  .row > div {
-    float: none;
-  }
+.contact {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  text-align: center;
 }
 
-.contact {
-  font-weight: 400;
+.description {
+  margin-top: 0;
+  text-align: center;
+  line-height: 1.3em;
 }
 
 .row {
-  display: block;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
 }
 
-.row > div {
-  display: inline-block;
-  margin-left: 20px;
-}
-
-.icon:first-child {
-  margin-left: 0;
-}
-
-.row > div > a {
-  margin: 0;
+.link {
+  font-size: 1em;
+  letter-spacing: 2px;
 }
 
 .footerBackground {
   background-color: white;
   color: var(--Gray01);
-  padding: 3em 0;
+  padding: 2em 0;
 }
 
 .footer a {
@@ -43,22 +38,4 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.divider {
-  top: 60px;
-  position: relative;
-  height: 6px;
-  display: block;
-  float: left;
-  width: calc((100% - 1180px) / 2);
-  background-color: var(--Gray01);
-  margin: 0 0 1.45em 0;
-}
-
-@media (max-width: 1200px) {
-  .divider {
-    top: 0px;
-    width: 160px;
-  }
 }
