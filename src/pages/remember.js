@@ -15,7 +15,7 @@ const Remember = () => (
     <Hero
       remember
       title="Remember"
-      description="Designing and launching an iOS app"
+      description="Reminders for your daily tasks"
     />
     {/** Introduction */}
     <Section black>
@@ -23,8 +23,8 @@ const Remember = () => (
         <h4 className={styles.about}>ABOUT THIS PROJECT</h4>
         <div className={styles.paragraph}>
           <h3 className={styles.summary}>
-            I created an iOS app that helps people remember easy-to-forget
-            tasks.
+            I built and launched an iOS app that helps people remember
+            easy-to-forget tasks.
           </h3>
         </div>
       </div>

@@ -4,12 +4,12 @@
   height: 75vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
 }
 
 .kenzo {
-  margin-top: 2em;
   margin-bottom: 0.5em;
   font-size: 2.75em;
 }

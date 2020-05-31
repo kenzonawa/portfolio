@@ -25,18 +25,15 @@ const Home = () => {
         <div className={styles.hero}>
           <h1 className={styles.kenzo}>Hi, I'm Kenzo</h1>
           <h3 className={styles.designer}>
-            Product Designer at <span className={styles.intuit}>Intuit.</span>
+            Product Designer at <span className={styles.intuit}>Intuit</span>
           </h3>
-          <p>
-            I strive to push the world forward by creating a bridge between
-            people and technology. YEP
-          </p>
+          <p>I enjoy making people's lives easier and more productive</p>
         </div>
       </Section>
 
       <Section gray>
         <div className={styles.hero}>
-          <h1 className={styles.kenzo}>Here are some of my projects</h1>
+          <h1>Here are some of my projects</h1>
         </div>
       </Section>
 

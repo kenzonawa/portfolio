@@ -66,3 +66,30 @@
   font-weight: 600;
   color: var(--Gray02);
 }
+
+.hero {
+  background-color: #ffdcdc;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 4.5em;
+}
+
+.title {
+  font-size: 3.25em;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 1.45em;
+}
+
+.textContainer {
+}
+
+.heroImage {
+  max-width: 800px;
+  margin-top: auto;
+}

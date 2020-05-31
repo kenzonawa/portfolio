@@ -4,7 +4,6 @@ import Layout from "../Layout/layout"
 import SEO from "../seo"
 import Section from "../Section/section"
 import SeoIcon from "../../assets/seo.svg"
-import Hero from "../Hero/hero"
 import Number from "../Number/number"
 import SectionContent from "../SectionContent/sectionContent"
 import styles from "./project.module.css"
@@ -12,11 +11,18 @@ import styles from "./project.module.css"
 const Intuit = () => (
   <Layout>
     <SEO title="Home" />
-    <Hero
-      intuitds
-      title="Redefining design systems"
-      description="What happens when a big product tries to maintain consistency"
-    />
+    <div className={styles.hero}>
+      <div className={styles.textContainer} data-aos="fade-up">
+        <h1 className={styles.title}>Redefining design systems</h1>
+        <h3 className={styles.description}>
+          What happens when a big product tries to maintain consistency
+        </h3>
+      </div>
+      <div className={styles.heroImage}>
+        <img src="https://i.imgur.com/O0kR2G3.png" data-aos="fade-up" />
+      </div>
+    </div>
+
     {/** Introduction */}
     <Section black>
       <div className={styles.spacious}>

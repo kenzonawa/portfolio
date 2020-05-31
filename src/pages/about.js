@@ -25,12 +25,12 @@ const Home = () => {
             <div className={classes}>
               <h2>Kenzo is a straight edge designer</h2>
               <p>
-                Currently helping TurboTax customers connect to tax experts at
-                Intuit.
+                Currently helping TurboTax customers file their taxes through a
+                tax expert.
               </p>
               <p>
-                My technical background allows me to execute on scalability
-                issues so products can ship more efficiently.
+                I believe in first principles thinking and creating clarity
+                around ambigous problem spaces.
               </p>
               <h4>Interests:</h4>
               <p>
@@ -40,7 +40,7 @@ const Home = () => {
                 <br />
                 🎸 Electric guitar
                 <br />
-                💭 Drift into thought
+                💭 Drifting into thought
               </p>
             </div>
           </div>

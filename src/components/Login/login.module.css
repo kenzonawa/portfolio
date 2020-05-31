@@ -18,3 +18,12 @@
 .input {
   width: 300px;
 }
+
+.unlock {
+  height: 20px;
+  margin-right: 8px;
+}
+
+.unlock path {
+  fill: white;
+}

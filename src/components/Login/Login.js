@@ -5,6 +5,7 @@ import Layout from "../Layout/layout"
 import styles from "./login.module.css"
 import TextField from "@material-ui/core/TextField"
 import Button from "../Button/Button"
+import UnlockIcon from "../../assets/unlock.svg"
 
 class Login extends React.Component {
   state = {
@@ -26,8 +27,12 @@ class Login extends React.Component {
     return (
       <Layout>
         <div className={styles.center}>
-          <h1>This content is protected</h1>
-          <img height="128" src="https://i.imgur.com/eDyo1Lj.png" />
+          <h1>Ahoy, matey!</h1>
+          <img height="128" src="https://i.imgur.com/lz3yOQt.png" />
+          <p>
+            Ye found a secret stash. You're gonna need the right password to
+            open it
+          </p>
           <form
             method="post"
             onSubmit={event => {
@@ -50,7 +55,8 @@ class Login extends React.Component {
             />
             <br />
             <Button primary type="submit">
-              Enter
+              <UnlockIcon className={styles.unlock} />
+              Unlock
             </Button>
           </form>
         </div>
