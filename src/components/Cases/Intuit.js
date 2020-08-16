@@ -29,8 +29,8 @@ const Intuit = () => (
         <h4 className={styles.about}>ABOUT THIS PROJECT</h4>
         <div className={styles.paragraph}>
           <h3 className={styles.summary}>
-            How do you change the game of a growing design system in favor of
-            product speed and cohesivenss?
+            How do you enable a design system to unlock even more speed and
+            cohesivenss?
           </h3>
         </div>
       </div>
@@ -74,8 +74,8 @@ const Intuit = () => (
         />
         <p>
           The start of the design system involved designers creating wiki pages
-          in Confluence where they described design intent of some recurrent UX
-          patterns in TurboTax.
+          in <strong>Confluence</strong> where they described design intent of
+          some recurrent UX patterns in TurboTax.
         </p>
         <p>
           The initial goal of the design system team was to increase the speed
@@ -112,20 +112,20 @@ const Intuit = () => (
 
         <p>
           When shipping features with their engineers, sometimes designers would
-          send them component documentation. What that meant was that the
-          developers believed they had to build it from scratch, which resulted
-          in teams coding duplicates of the same component. There wasn't a clear
-          process for product teams when trying to leverage the design system.
+          send them component specs. That meant the developers believed they had
+          to build it from scratch, which resulted in teams coding duplicates of
+          the same component. There wasn't a clear process for product teams
+          when trying to leverage the design system.
         </p>
         {/*
         <img src="https://i.imgur.com/Nfun9ST.png" />
       */}
         <p>
-          There were also cases where designers would try to use components, but
-          their developers ran into technical constraints. Which meant that the
-          product team would lose the built-in treatment for responsiveness,
-          accessibility and interaction behavior - often having to recreate it
-          all from scratch.
+          There were also cases where developers would try to use components,
+          but they ran into technical constraints. In this case, they often had
+          to recreate it from scratch, which meant product team would lose the
+          built-in treatment for responsiveness, accessibility and interaction
+          behavior.
         </p>
         <br />
         <h3>Dispersed documentation</h3>
@@ -136,23 +136,14 @@ const Intuit = () => (
           documentation because they could be rather large.
         </p>
         <p>
-          It was pretty common for product teams to come asking what was the
+          It was pretty common for product teams to just ask us what was the
           most up-to-date documentation that we had.
         </p>
-        <ul>
-          <li>
-            Hunt for documentation first on the website, then Zeplin, and then
-            PDFs
-          </li>
-          <li>
-            Ask the DS team which was most up-to-date documentation and ask for
-            Sketch files
-          </li>
-        </ul>
         <p>
-          We had an outdated Sketch library. No one had taken ownership of the
-          symbol library, so designers usually just asked around for Sketch
-          files that had what they needed.
+          We also had an outdated Sketch symbol library. It'd been part of the
+          design system team process to create component specs, but not to
+          update the symbol library. Product team designers usually just asked
+          around for Sketch files that had what they needed.
         </p>
       </div>
     </Section>
@@ -168,13 +159,13 @@ const Intuit = () => (
       <h1>The word to component gap</h1>
       <div className={styles.paragraph}>
         <p>
-          What we had, essentially, was a design-only design system. We had
-          components and patterns documented on the website, but some teams were
-          unable to use them.  At this point, there was not a lot of trust in
-          the design system.
+          What we had, essentially, was a design-only design system that was
+          also disorganized. We had components and patterns documented on the
+          website, but some teams were unable to use them. It was also a hassle
+          to find the latest documentation around any particular topic.  At this
+          point, there was not a lot of trust in the design system.
         </p>
-        [this also meant teams could experiment less]
-        <img src="https://i.imgur.com/bTVjRLH.png" />
+        <img src="https://i.imgur.com/2lCUBZB.jpg" />
         <h3>Revisiting the initial goal</h3>
         <p>
           If our design system was built off the goal of increasing the speed at
@@ -212,11 +203,11 @@ const Intuit = () => (
         <h4>1. Process</h4>
         <img className="big-width" src="https://i.imgur.com/mrScSQR.jpg" />
         <p>
-          Creating closer relationships between designers and developers. We
-          made it a priority to clearly understand what the engineering gaps
-          were. This way, the designer wasn't bridging the communication between
-          us and we could have a conversation about how to solve a particular
-          issue.
+          It was common for there to be a 4-way game of telephone between design
+          systems and product team designers and developers, and we decided to
+          put a stop to this. Creating closer relationships between designers
+          and developers was one of our goals. We made it a priority to
+          understand what the engineering gaps were.
         </p>
         <h4>2. Storybook</h4>
         <video autoPlay muted loop playsInline className={styles.video}>
@@ -226,19 +217,15 @@ const Intuit = () => (
           ></source>
         </video>
         <p>
-          Using Storybook to display all our components running off code. The
-          goal here was that Storybook would become the main source of truth
-          when consulting the design system. Here, everyone could see what the
-          component actually looked like and play with its interaction
-          behaviors.
+          We decided to use Storybook to display all our components running off
+          code. The goal here was that Storybook would become the main source of
+          truth when consulting the design system.
         </p>
         <p>
-          Knowing that having alignment between designers and developers was a
-          priority, it was the only tool that fulfilled this need. It could not
-          only show components running off the source code, but also display
-          design intent documentation.
+          Everyone could see what the component actually looked like and play
+          with its interaction behaviors. It not only showed components running
+          off the source code, but also display design intent documentation.
         </p>
-        [Design intent to code journey]
       </div>
     </Section>
 
@@ -252,12 +239,15 @@ const Intuit = () => (
           We still had dispersed documentation and now we added one more
           resource.
         </p>
+        <img src="https://i.imgur.com/wSwZqZc.jpg" />
         <p>
-          As we'd regularly talk to our product teams, we knew the most valuable
-          quality from the design system is that information is accurate. That
-          was not the case in our current situation. We had duplicate
-          information everywhere and outdated information still available. We
-          needed to consolidate.
+          We rushed to consolidate and get rid of duplicate/outdated resources.
+          Product teams running on incorrect information was the last thing we
+          wanted.
+        </p>
+        <p>
+          We also recreated a new Sketch symbol library to be referenced within
+          Storybook along with all live components.
         </p>
       </div>
     </Section>
@@ -275,13 +265,37 @@ const Intuit = () => (
           What we achieved was a central place with the latest information from
           the design system.
         </p>
-        <img src="https://i.imgur.com/bdxuMfj.png" />
+        <img className="big-width" src="https://i.imgur.com/Q7ztagk.jpg" />
+
+        <p>
+          Far from perfect, there were still some misc documentation that were
+          still elsewhere, but we came a long way and the new Storybook website
+          became a useful resource not only for our product designers, but
+          product development and even product managers started using it as
+          well.
+        </p>
       </div>
     </Section>
 
     {/** The End */}
-    <Section gray icon={SeoIcon} header="The end" title="What I Learned">
-      <p>This is where results</p>
+    <Section white icon={SeoIcon}>
+      <Number>07</Number>
+      <h1>Conclusion</h1>
+      <div className={styles.paragraph}>
+        <p>
+          I believe design systems work and product design work are a bit
+          different.
+        </p>
+        <p>
+          We had no product managers in design systems, so it was up to us to
+          figure out what had to be done. I learned how to be proactive in
+          solving problems before anyone asks to solve them.
+        </p>
+        <p>
+          This opened the door for a lot of ownership within the team and is a
+          skill that I'm glad to have picked up along this journey.
+        </p>
+      </div>
     </Section>
   </Layout>
 )
