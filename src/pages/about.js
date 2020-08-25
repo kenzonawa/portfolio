@@ -23,15 +23,16 @@ const Home = () => {
               <img src="https://i.imgur.com/qeO4Dqc.jpg" />
             </div>
             <div className={classes}>
-              <h2>Kenzo is a straight edge designer</h2>
-              <p>
-                Currently helping TurboTax customers file their taxes through a
-                tax expert.
-              </p>
+              <h2>About Kenzo</h2>
               <p>
                 I believe in first principles thinking and creating clarity
                 around ambigous problem spaces.
               </p>
+              <p>
+                Currently helping TurboTax customers file taxes through a tax
+                expert.
+              </p>
+
               <h4>Interests:</h4>
               <p>
                 🎮 Video games
@@ -46,6 +47,7 @@ const Home = () => {
           </div>
         </div>
       </HomeSection>
+      <div className={styles.divider}></div>
       <Footer />
     </Layout>
   )

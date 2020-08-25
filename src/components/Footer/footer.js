@@ -6,10 +6,10 @@ const Footer = props => {
   return (
     <div className={styles.footerBackground}>
       <footer className={styles.footer}>
-        <h3 className={styles.contact}>Let's talk 💬</h3>
-        <p className={styles.description}>
+        <h2 className={styles.contact}>Let's talk 💬</h2>
+        <h4 className={styles.description}>
           Hit me up at <a href="#">kenzo.nawa@gmail.com</a>
-        </p>
+        </h4>
         <div className={styles.row}>
           <a href="https://www.linkedin.com/in/kenzonawa/" target="_blank">
             <h3 className={styles.link}>LINKEDIN</h3>

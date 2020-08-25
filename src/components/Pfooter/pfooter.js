@@ -7,27 +7,29 @@ import { Link } from "gatsby"
 const Footer = props => {
   return (
     <div className={styles.footerBackground}>
-      
       <div className="homeContainer">
-
         <footer className={styles.footer}>
           <div className={styles.flexItem}>
-            <Link to={props.previousLink}>
-            <Button secondary>{props.previous}</Button>
-            </Link>
+            {props.previous != "" && (
+              <Link to={props.previousLink}>
+                <Button secondary>{props.previous}</Button>
+              </Link>
+            )}
           </div>
           <Link to="/home/">
-
-            <Button className={styles.flexItem} primary>Home</Button>
-            </Link>
-          <div className={styles.flexItem}>
-          <Link to={props.nextLink}>
-
-          <Button className={styles.flexItem} secondary>{props.next}</Button>
+            <Button className={styles.flexItem} outline>
+              Home
+            </Button>
           </Link>
+          <div className={styles.flexItem}>
+            {props.next != "" && (
+              <Link to={props.nextLink}>
+                <Button className={styles.flexItem} secondary>
+                  {props.next}
+                </Button>
+              </Link>
+            )}
           </div>
-          
-          
         </footer>
       </div>
     </div>
