@@ -264,7 +264,7 @@ const Remember = () => (
     <div className={styles.divider}></div>
     <Pfooter
       previous="Redefining design systems at Intuit"
-      previousLink="/app/intuit"
+      previousLink="/designSystem/"
       next=""
     />
   </Layout>

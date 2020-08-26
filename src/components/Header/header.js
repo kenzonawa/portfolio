@@ -18,7 +18,7 @@ const Header = props => {
       <div className={styles.headerContainer}>
         <div></div>
         <div className={styles.links}>
-          <Link to="/home/">Work</Link>
+          <Link to="/">Work</Link>
           <Link to="/about/">About</Link>
           <a href={Pdf} target="_blank">
             Resume

@@ -16,7 +16,7 @@ const Footer = props => {
               </Link>
             )}
           </div>
-          <Link to="/home/">
+          <Link to="/">
             <Button className={styles.flexItem} outline>
               Home
             </Button>

@@ -1,51 +1,71 @@
 import React from "react"
 import { Link } from "gatsby"
-import Landing from "../components/Landing/Landing"
-import LandingNav from "../components/Landing/LandingNav"
+import Section from "../components/Section/section"
+import HomeSection from "../components/HomeSection/homeSection"
+
+import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
-import {useSpring, animated} from 'react-spring'
-import styles from './index.module.css'
-import '../styles/skeleton.css'
+import Project from "../components/Project/Project"
+import styles from "./styles/home.module.css"
+import Button from "../components/Button/Button"
+import lottie from "lottie-web"
+import Lottie from "react-lottie"
+import Footer from "../components/Footer/footer"
+import IntuitVideo from "../videos/intuit.mp4"
+import { Router } from "@reach/router"
+import Login from "../components/Login/Login"
+import Intuit from "../components/Cases/Intuit"
 
-import Button from '../components/Button/Button'
+const Index = () => {
+  return (
+    <Layout>
+      <SEO title="Home" />
 
-const config = { mass: 1, tension: 280, friction: 60 }
-
-const IndexPage = () => {
-
-  const animation = useSpring({config, transform: 'translate3d(0px,0,0)', opacity: 1, from: {opacity:0, transform: 'translate3d(-250px,0,0)'}})
-  const animation2 = useSpring({config, delay: 750, transform: 'translate3d(0px,0,0)', opacity: 1, from: {opacity:0, transform: 'translate3d(-250px,0,0)'}})
-  const animation3 = useSpring({config, delay: 1800, transform: 'translate3d(0px,0,0)', opacity: 1, from: {opacity:0, transform: 'translate3d(-250px,0,0)'}})
-  const animation4 = useSpring({delay: 3000, opacity: 1, from: {opacity:0}})
-  const animation5 = useSpring({delay: 5000, opacity: 1, from: {opacity:0}})
-
-  return(
-  <Landing>
-    <SEO title="Home" />
-    <LandingNav />
-      <div className={["row", styles.flex].join(' ')}>  
-        <div className={["eight","columns", styles.left].join(' ')}>
-          <animated.h1 className={[styles.copy, styles.h1].join(' ')} style={animation}>
-            Kenzo Nawa
-          </animated.h1>
-          <animated.h2 className={[styles.copy, styles.h2].join(' ')} style={animation2}>
-            Product Designer
-          </animated.h2>
-          <animated.h3 className={[styles.copy, styles.h3].join(' ')} style={animation3}>
-            I'm deeply passionate about consumer-facing mobile apps and artificial intelligence.        
-          </animated.h3>
-          <animated.div style={animation5}>
-          <Link to="/home/"><Button ghost>View Work</Button></Link>
-          </animated.div>
+      <Section white>
+        <div className={styles.hero}>
+          <h1 className={styles.kenzo}>Hi, I'm Kenzo</h1>
+          <h3 className={styles.designer}>
+            Product Designer at <span className={styles.intuit}>Intuit</span>
+          </h3>
+          <p>I enjoy making people's lives easier and more productive</p>
         </div>
-        <div className={["four","columns", styles.right].join(' ')}> 
-          <animated.div className={styles.rightContainer} style={animation4} >
-            <Link to="/home/"><div className={[styles.circle, styles.moving].join(' ')}></div>            
-            <div className={styles.circle}></div></Link>
-          </animated.div>
-        </div>
-      </div>
-  </Landing>
-)}
+      </Section>
 
-export default IndexPage
+      <Section gray>
+        <div className={styles.hero}>
+          <h1>Here are some of my projects</h1>
+        </div>
+      </Section>
+
+      <HomeSection reel>
+        <div className={styles.flexGrid}>
+          <Project
+            title="What happens when a 4,000+ screen app tries to use a design system"
+            subtitle="There's a lot of people involved"
+            time="7 min read"
+            link="/designSystem/"
+          >
+            <img
+              className={styles.noBottom}
+              src="https://i.imgur.com/0FDQO88.png"
+            />
+          </Project>
+          <Project
+            title="Behind the scenes of a designer who launched an iOS app"
+            subtitle="This is more process than you find for your regular app"
+            time="6 min read"
+            link="/remember/"
+          >
+            <img
+              className={styles.noBottom}
+              src="https://i.imgur.com/DpW1RTY.png"
+            />
+          </Project>
+        </div>
+      </HomeSection>
+      <Footer />
+    </Layout>
+  )
+}
+
+export default Index

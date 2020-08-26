@@ -1,15 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
-import Layout from "../Layout/layout"
-import SEO from "../seo"
-import Section from "../Section/section"
-import SeoIcon from "../../assets/seo.svg"
-import Number from "../Number/number"
-import SectionContent from "../SectionContent/sectionContent"
-import styles from "./project.module.css"
-import Pfooter from "../Pfooter/pfooter"
+import Layout from "../components/Layout/layout"
+import SEO from "../components/seo"
+import Section from "../components/Section/section"
+import SeoIcon from "../assets/seo.svg"
+import Number from "../components/Number/number"
+import SectionContent from "../components/SectionContent/sectionContent"
+import styles from "../components/Cases/project.module.css"
+import Pfooter from "../components/Pfooter/pfooter"
 
-const Intuit = () => (
+const DesignSystem = () => (
   <Layout>
     <SEO title="Home" />
     <div className={styles.hero}>
@@ -310,4 +310,4 @@ const Intuit = () => (
   </Layout>
 )
 
-export default Intuit
+export default DesignSystem

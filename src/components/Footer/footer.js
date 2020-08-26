@@ -8,7 +8,8 @@ const Footer = props => {
       <footer className={styles.footer}>
         <h2 className={styles.contact}>Let's talk 💬</h2>
         <h4 className={styles.description}>
-          Hit me up at <a href="#">kenzo.nawa@gmail.com</a>
+          Hit me up at{" "}
+          <a href="mailto:kenzo.nawa@gmail.com">kenzo.nawa@gmail.com</a>
         </h4>
         <div className={styles.row}>
           <a href="https://www.linkedin.com/in/kenzonawa/" target="_blank">
