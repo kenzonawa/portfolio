@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import Pdf from "../../Kenzo_Nawa_Product_Designer_Resume.pdf"
+import Pdf from "../../KenzoNawa_Resume.pdf"
 
 import styles from "./header.module.css"
 
